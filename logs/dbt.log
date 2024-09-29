@@ -1,0 +1,31 @@
+[0m04:36:38.171082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x734bba047590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x734bba5c38f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x734bbc08f110>]}
+
+
+============================== 04:36:38.174967 | dee324e3-c7c4-4225-845f-8dae908100d3 ==============================
+[0m04:36:38.174967 [info ] [MainThread]: Running with dbt=1.8.7
+[0m04:36:38.175751 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/codespace/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init dbt_simulator', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m04:36:38.185373 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/codespace/.dbt')}
+[0m04:36:38.186122 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m04:36:38.187920 [debug] [MainThread]: Starter project path: /usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/include/starter_project
+[0m04:36:38.191864 [info ] [MainThread]: 
+Your new dbt project "dbt_simulator" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m04:36:38.192686 [info ] [MainThread]: Setting up your profile.
+[0m04:36:40.876330 [info ] [MainThread]: Profile dbt_simulator written to /home/codespace/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m04:36:40.878501 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 2.7825997, "process_user_time": 1.317196, "process_kernel_time": 0.151792, "process_mem_max_rss": "121444", "process_in_blocks": "232", "process_out_blocks": "72"}
+[0m04:36:40.879273 [debug] [MainThread]: Command `dbt init` succeeded at 04:36:40.879161 after 2.78 seconds
+[0m04:36:40.879793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x734bbc279b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x734bb9eaf7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x734bb9e671a0>]}
+[0m04:36:40.880288 [debug] [MainThread]: Flushing usage events
