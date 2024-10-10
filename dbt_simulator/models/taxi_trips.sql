@@ -1,0 +1,22 @@
+select
+    "VendorID" as vendor_id,
+    "lpep_pickup_datetime" as pickup_datetime,
+    "lpep_dropoff_datetime" as dropoff_datetime,
+    "store_and_fwd_flag" as store_and_fwd_flag,
+    "RatecodeID" as ratecode_id,
+    "PULocationID" as pickup_location_id,
+    "DOLocationID" as dropoff_location_id,
+    "passenger_count" as passenger_count,
+    "trip_distance" as trip_distance,
+    "fare_amount" as fare_amount,
+    "extra" as extra,
+    "mta_tax" as mta_tax,
+    "tip_amount" as tip_amount,
+    "tolls_amount" as tolls_amount,
+    "ehail_fee" as ehail_fee,
+    "improvement_surcharge" as improvement_surcharge,
+    "total_amount" as total_amount,
+    "payment_type" as payment_type,
+    "trip_type" as trip_type,
+    "congestion_surcharge" as congestion_surcharge
+from {{ source('taxi_trips', 'green_taxi') }}

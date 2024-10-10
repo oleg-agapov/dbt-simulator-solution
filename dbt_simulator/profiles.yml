@@ -3,4 +3,4 @@ dbt_simulator:
   outputs:
     dev:
       type: duckdb
-      path: ~/database.duckdb
+      path: ./database.duckdb

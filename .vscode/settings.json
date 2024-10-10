@@ -1,0 +1,11 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "DuckDB",
+            "database": "${workspaceFolder:codespaces-blank}/dbt_simulator/database.duckdb",
+            "name": "taxi_trips"
+        }
+    ]
+}

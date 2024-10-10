@@ -1,0 +1,19 @@
+sources:
+  - name: taxi_trips_monthly
+    meta:
+      external_location: "read_parquet('https://d37ci6vzurychx.cloudfront.net/trip-data/{name}.parquet')"
+    tables:
+      - name: green_tripdata_2024-01
+      - name: green_tripdata_2024-02
+      - name: green_tripdata_2024-03
+
+  - name: taxi_trips
+    tables:
+      - name: green_taxi
+        config:
+          external_location: |
+            read_parquet([
+              'https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-01.parquet', 
+              'https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-02.parquet',
+              'https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2024-03.parquet'
+            ])
