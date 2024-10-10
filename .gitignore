@@ -1,1 +1,2 @@
 dbt_simulator/database.duckdb
+dbt_simulator/.user.yml
